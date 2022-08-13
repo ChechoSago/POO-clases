@@ -4,7 +4,7 @@ package com.checho.dispensador.dominio;
         public Cerveza cerveza;
         public double cantidadActual;
         public double capacidad ;
-        public double temperatura = 0;
+        public double temperatura = 2;
 
 
         public Dispensador(Cerveza cerveza, double cantidadActual, double capacidad) {
