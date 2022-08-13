@@ -3,8 +3,8 @@ package com.checho.dispensador.dominio;
     public class Dispensador {
         public Cerveza cerveza;
         public double cantidadActual;
-        public double capacidad ;
-        public double temperatura = -2;
+        public double capacidad;
+        public double temperatura = -8;
 
 
         public Dispensador(Cerveza cerveza, double cantidadActual, double capacidad) {
