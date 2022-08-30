@@ -1,14 +1,30 @@
 package com.checho.dispensador.dominio;
 
 public class Cerveza {
-    public String nombreCerveza;
-    public String marca;
-    public double temperaturaRecomendada;
+    private String nombreCerveza;
+    private String marca;
+    private double temperaturaRecomendada;
 
 
     public Cerveza(String nombreCerveza, String marca) {
         this.nombreCerveza = nombreCerveza;
         this.marca = marca;
+    }
+
+    public String getNombreCerveza() {
+        return nombreCerveza;
+    }
+
+    public String getMarca() {
+        return marca;
+    }
+
+    public double getTemperaturaRecomendada() {
+        return temperaturaRecomendada;
+    }
+
+    public void setTemperaturaRecomendada(double temperaturaRecomendada) {
+        this.temperaturaRecomendada = temperaturaRecomendada;
     }
 }
 

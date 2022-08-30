@@ -14,6 +14,9 @@ public class AppDispensador {
       Dispensador dispensador1 = new Dispensador(cerveza1,0, 50);
       dispensador1.llenar();
 
+      Dispensador dispensador3 = new Dispensador(cerveza3, 500,700);
+
+
       Dispensador dispensador2 = new Dispensador(cerveza2, 80, 80);
       dispensador2.servir(10);
 
@@ -21,6 +24,16 @@ public class AppDispensador {
       dispensador2.servir(60);
 
       dispensador1.vaciar();
+      dispensador3.vaciar();
+      System.out.println(dispensador3.getCantidadActual());
+
+      System.out.println(cerveza1.getNombreCerveza());
+
+      cerveza1.setTemperaturaRecomendada(-56);
+
+      System.out.println(cerveza1.getTemperaturaRecomendada());
+      System.out.println(dispensador1.getCapacidad());
+
 
     }
 
