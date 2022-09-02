@@ -15,7 +15,8 @@ public class AppAgenda {
 
         Contacto contactoABuscar = AgendaChecho.buscarPorApellido("García");
         contactoABuscar.imprimircontacto(contactoABuscar);
-
+        Contacto contactoABuscar = AgendaChecho.buscarPorApellido("Puerta");
+        contactoABuscar.imprimircontacto(contactoABuscar);
     }
 }
 
