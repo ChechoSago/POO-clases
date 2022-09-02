@@ -53,20 +53,21 @@ public class Agenda {
         return contactoBuscado;
     }
 
-    public void eliminarContacto(String numero) {
+    public String eliminarContacto(String numero) {
         Contacto contactoAEliminar = this.buscarPorNumero(numero);
         if (contactoAEliminar != null) {
             this.contactos.remove(contactoAEliminar);
         }
+        return "lo eliminaste";
     }
 
-    public boolean cambiarNumero(String numeroViejo, String numeroNuevo) {
+    public String cambiarNumero(String numeroViejo, String numeroNuevo) {
         Contacto contactoACambiar = this.buscarPorNumero(numeroViejo);
         if ( contactoACambiar != null){
             contactoACambiar.setNumero(numeroNuevo);
-            return true;
+            return "Lo cambiaste perro";
         }
-        return false;
+        return "no lo pudimos cambiar";
     }
 
     public void ordenarAlfabeticamente() {
