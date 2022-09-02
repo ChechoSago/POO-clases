@@ -17,6 +17,8 @@ public class AppAgenda {
         contactoABuscar.imprimircontacto(contactoABuscar);
         Contacto contactoABuscar2 = AgendaChecho.buscarPorApellido("Puerta");
         contactoABuscar.imprimircontacto(contactoABuscar2);
+        AgendaChecho.eliminarContacto("3113341315");
+        AgendaChecho.getContactos().forEach(contacto -> System.out.println(contacto.getNombre()));
 
 
     }

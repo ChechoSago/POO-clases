@@ -57,8 +57,10 @@ public class Agenda {
         Contacto contactoAEliminar = this.buscarPorNumero(numero);
         if (contactoAEliminar != null) {
             this.contactos.remove(contactoAEliminar);
+            return "lo eliminaste";
         }
-        return "lo eliminaste";
+        return "no se encontró eliminaste";
+
     }
 
     public String cambiarNumero(String numeroViejo, String numeroNuevo) {
