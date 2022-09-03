@@ -2,45 +2,46 @@ package com.checho.dispensaMecato.dominio;
 
 public class Snack {
     private String nombre;
-    private int codigo;
+    private String codigo;
     private double precio;
-    private int cantidad;
+    private int cantidadunidades;
 
-    public Snack(String nombre, int codigo, double precio) {
+    public Snack(String nombre, String codigo, double precio, int cantidadunidades) {
         this.nombre = nombre;
         this.codigo = codigo;
         this.precio = precio;
+        this.cantidadunidades = cantidadunidades;
     }
 
     public String getNombre() {
         return nombre;
     }
 
-    public int getCodigo() {
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getCodigo() {
         return codigo;
+    }
+
+    public void setCodigo(String codigo) {
+        this.codigo = codigo;
     }
 
     public double getPrecio() {
         return precio;
     }
 
-    public int getCantidad() {
-        return cantidad;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-
-    public void setCodigo(int codigo) {
-        this.codigo = codigo;
-    }
-
     public void setPrecio(double precio) {
         this.precio = precio;
     }
 
-    public void setCantidad(int cantidad) {
-        this.cantidad = cantidad;
+    public int getCantidadunidades() {
+        return cantidadunidades;
+    }
+
+    public void setCantidadunidades(int cantidadunidades) {
+        this.cantidadunidades = cantidadunidades;
     }
 }
