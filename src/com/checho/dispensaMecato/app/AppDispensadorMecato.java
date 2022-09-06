@@ -47,6 +47,8 @@ public class AppDispensadorMecato {
         dispensado.obtenerMenorMayor();
         System.out.println("-------------------");
 
+        System.out.println(dispensado.obtenerAgotadosFor());
+
 
 
 

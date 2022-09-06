@@ -84,8 +84,22 @@ public class DispensadorSnack {
         }
     }
     public List<String> obtenerAgotados() {
+        List<String> faltantes = this.mecatos.stream()
+                .filter(mec -> mec.getCantidadunidades() == 0)
+                .map(mec -> mec.getNombre())
+                .collect(Collectors.toList());
+        return faltantes;
+    }
+
+    public List<String> obtenerAgotadosFor() {
         List<String> faltantes = new ArrayList<>();
-        this.mecatos.forEach(m -> faltantes.add(m.getNombre() + " " + m.getCantidadunidades()));
+
+        for (Snack mecato : mecatos) {
+            if (mecato.getCantidadunidades() == 0) {
+                faltantes.add(mecato.getNombre());
+            }
+        }
+
         return faltantes;
     }
 
