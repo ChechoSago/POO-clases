@@ -29,7 +29,7 @@ public class AppCentroComercial {
 
         centroComercial1.cerrarTienda(1);
 
-        List<Tienda> tiendasQueTengo = centroComercial1.buscarTiendas()
+
     }
 }
 
