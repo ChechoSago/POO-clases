@@ -46,9 +46,12 @@ public class App {
                     AtomicReference<Boolean> valid = new AtomicReference<>(true);
                     while(!valid.get()){
                         float tempBet = Float.parseFloat(roundBetString);
-                        List<Player> playersList = round.getPlayers().forEach(player -> {
-                            valid.set(player.getBet() > tempBet);
-                            return player;
+                        round.getPlayers().forEach(player -> {
+                           if(player.getBet() > tempBet){
+
+
+                            }
+
                         });
                     }
 
