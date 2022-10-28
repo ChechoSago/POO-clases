@@ -11,8 +11,8 @@ public class app {
         Empleado vendedor2 = new Vendedor("Carolina", 980000, 35989000);
         Empleado freelance1 = new Freelance("Johanna", 71000, 89);
         Empleado directo2 = new Directo("David", 3975000);
-        Empleado freelance2 = new Freelance("Gustavo", 425000, 65);
-        Empleado promotor1 = new Promotor("Pedro", 1200, 5, 62);
+        Empleado freelance2 = new Freelance("Gustavo", 42500, 65);
+        Empleado promotor1 = new Promotor("Pedro", 1200, 300, 62);
         Nomina sistemaNomina = new Nomina();
         sistemaNomina.agregarEmpleado(directo1);
         sistemaNomina.agregarEmpleado(vendedor1);

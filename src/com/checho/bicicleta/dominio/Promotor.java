@@ -6,12 +6,11 @@ public class Promotor extends Empleado {
     private int comprasVolante;
 
     public static final float VALORPORCOMPRA = (float) 15000;
-    public static final float PAGOPORVOLANTE = (float) 300;
 
 
     @Override
     protected long calcularSalario() {
-        return (long) (volantesRepartidos*300 + VALORPORCOMPRA*comprasVolante);
+        return (long) (volantesRepartidos*valorVolante + VALORPORCOMPRA*comprasVolante);
     }
 
     public Promotor(String nombre, int volantesRepartidos, long valorVolante, int comprasVolante) {

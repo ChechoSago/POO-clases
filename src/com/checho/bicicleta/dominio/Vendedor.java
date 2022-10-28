@@ -13,7 +13,7 @@ public class Vendedor extends Directo {
 
     @Override
     protected long calcularSalario() {
-        return super.calcularSalario()+calcularComision();
+        return super.calcularSalario() + calcularComision();
     }
 
     public long calcularComision() {
