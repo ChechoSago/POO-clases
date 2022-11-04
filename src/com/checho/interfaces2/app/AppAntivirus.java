@@ -15,6 +15,7 @@ public class AppAntivirus {
         antivirus.agregar(new Imagen("foto.jpg", 10));
         antivirus.agregar(new DocumentoExcel("notas.exe", 15));
         antivirus.agregar(new DocumentoPowerPoint("info.pptx", 10));
+        antivirus.agregar(new DocumentoAudio("audio.mp3", 90));
 
         antivirus.escanear();
     }
