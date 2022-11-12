@@ -35,3 +35,4 @@ public abstract class Paciente {
         this.necesitaCirugia = necesitaCirugia;
     }
 }
+
