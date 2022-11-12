@@ -25,13 +25,13 @@ public class Oftanmolgo {
                .forEach(paciente -> ((PacienteApto) paciente).operar());
 
     }
-    public List<Paciente> getPacientesAOperar(){
-        return pacienteApto;
-
+    // public List<Paciente> getPacientesAOperar(){
+       // public List<Paciente> getPacientesAOperar() {
+         //   return this.paciente.stream().filter(p -> p instanceof PacienteApto && p.isNecesitaCirugia())
+           //         .collect(Collectors.toList());
+        //}
     }
 
 
 
 
-
-}
