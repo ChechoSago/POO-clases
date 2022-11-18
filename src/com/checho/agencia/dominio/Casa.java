@@ -15,4 +15,5 @@ public class Casa extends Inmueble implements Arrendable{
     public String toString() {
         return "Casa";
     }
+
 }
