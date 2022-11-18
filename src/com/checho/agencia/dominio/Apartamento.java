@@ -1,6 +1,6 @@
 package com.checho.agencia.dominio;
 
-public class Apartamento extends Inmueble implements Arrendable{
+public class Apartamento extends Inmueble implements Arrendable {
     @Override
     public void arrendar() {
 
@@ -10,4 +10,5 @@ public class Apartamento extends Inmueble implements Arrendable{
     public void devolver() {
 
     }
+
 }
